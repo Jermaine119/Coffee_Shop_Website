@@ -38,6 +38,57 @@
             </div>
         </div>
         </section>
+<section>
+    <form id="contact-form" action="action_page.php" method="post">
+        <div>
+            <input class="button" type="reset">
+        </div>
+        <div>
+            <label for="title">Title:</label>
+            <label for="Mr">Mr</label>
+            <input type="radio" id="Mr" name="title" value="Mr">
+            <label for="Mrs">Mrs</label>
+            <input type="radio" id="Mrs" name="title" value="Mrs">
+        </div>
+        <br>
+        <div>
+            <label for="first-name" First Name>First Name:</label>
+            <input type="text" id="first-name" name="last-name" placeholder="enter your last name here" required>
+        </div>
+        <br>
+        <div>
+            <label for="last-name">Last Name</label>
+            <input type="text" id="last-name=" last-name" placeholder="enter your first name here" required>
+        </div>
+        <br>
+        <div>
+            <label for="email">Email Address</label>
+            <input type="email" name="email-address" placeholder="enter your email address here">
+        </div>
+        <br>
+        <div>
+            <label for="phone">Telephone Number</label>
+            <input type="tel" id="phone" name="phone" placeholder="enter your phone number here">
+        </div>
+        <br>
+        <div>
+            <label for="payment">How would you like us to contact you?</label>
+            <select name="payment" id="payment">
+                <option value="visa">Phone</option>
+                <option value="mastercard">Email</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            <label for="subscribe">Permission for us to contact you</label>
+            <input type="checkbox" id="permission" name="permission">
+        </div>
+        <br>
+        <div>
+            <input type="submit" class="button">
+        </div>
+    </form>
+</section>
     </main>
     <footer>
         <nav>
