@@ -5,7 +5,8 @@
 /* Ubuntu */
 
 :root {
-    --navy: rgba(4, 82, 85, 1);
+    --black: rgb(2, 39, 42);
+    --maroon: rgb(186, 54, 124, 0.8);
     --cobalt: rgba(8, 113, 122, 1);
     --milk: rgba(237, 224, 212, 1);
     --tea: rgba(221, 184, 146, 1);
@@ -170,7 +171,7 @@ button:hover {
     text-align: center;
     column-gap: 10px;
     background-color: var(--mocha);
-    padding-left: 10px;
+    padding: 0 0 10px 10px;
     margin-bottom: 5px;
 }
 
@@ -214,9 +215,10 @@ button:hover {
 .contact-details {
     /* border: 1px dashed red; */
     
-    margin: 20px;
+    margin-bottom: 10px;
     justify-content: center;
     align-items: center;    
+    max-height: 80px;
 }
 
 .drink-image {
@@ -269,6 +271,45 @@ h2 {
 
 #general-imgs {
     padding: 10px;
+}
+
+#contact-form {
+    /* border: dashed 1px yellow; */
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: var(--chocolate);
+    min-height: 450px;
+    margin: 10px 10px 0 10px;
+    padding: 10px 0 10px 0;
+    border-radius: 10px;
+}
+
+.s-r-buttons {
+
+    border-radius: 5px;
+    padding: 2px 5px 2px 5px;
+    margin: 0 20px 0 20px;
+    cursor: pointer;
+    background-color: var(--cobalt);
+    color: var(--black);
+}
+
+#submit-btn:hover {
+    color: var(--milk);
+}
+
+#reset-btn {
+
+    background-color: var(--maroon);
+    margin-right: 100px;
+}
+
+#reset-btn:hover {
+    color: var(--milk);
 }
 
 #footer-bar {
