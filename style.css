@@ -34,9 +34,9 @@ body {
 }
 
 #main {
-    min-height: 100vh;
     background-color: var(--chocolate);
     margin: 0 5px;
+    min-height: 95vh;
 }
 
 
@@ -130,6 +130,7 @@ button:hover {
 
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 10px;
     padding: 5px;
 }
@@ -142,7 +143,7 @@ button:hover {
 #cold-brew,
 #beetroot,
 #pain-au-chocolat {
-    width: 24.45%;
+    width: 24%;
     height: auto;
     object-fit: cover;
     object-position: top;
@@ -197,8 +198,8 @@ button:hover {
     align-items: center;
     flex-wrap: wrap;
     background-color: var(--chocolate);
-    min-height: 200px;
-    max-height: 300px;
+    min-height: 300px;
+    max-width: 100%;
     margin: 10px 10px 0 10px;
     padding: 10px 0 10px 0;
     border-radius: 10px;
@@ -225,11 +226,11 @@ button:hover {
     /* border: dashed 1px blue; */
 
     margin: 10px;
-    padding-inline: 10px;
+    padding: 10px;
     overflow: hidden;
     flex: 2;
     min-height: 250px;
-    max-height: 300px;
+    max-width: 300px;
 
 }
 
@@ -238,7 +239,7 @@ button:hover {
     
     align-content: center;
     text-align: center;
-    min-height: 250px;
+    min-height: 100px;
     max-height: 300px;
     flex: 5;
 }
@@ -256,7 +257,7 @@ h1 {
 }
 
 h2 {
-    font-size: 25px;
+    font-size: 40px;
     text-align: center;
     font-family: "Ubuntu", sans-serif;
     padding-bottom: 10%;
@@ -332,4 +333,99 @@ a {
 #footer-bar li,
 a:hover {
     color: var(--milk);
+}
+
+@media (max-width: 800px) {
+
+    #top-menu {
+        align-items: flex-end;
+    }
+
+    #links {
+        flex-direction: column;
+        padding-bottom: 10px;
+    }
+
+    .cta {
+        padding-bottom: 10px;
+    }
+
+    #home-button {
+        font-size: 80px;
+    }
+
+    #tag-line > p {
+        font-size: 2rem;
+        max-height: 80px;
+    }
+
+    #welcome-section {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .drinks-container {    
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .drink-image {
+        max-height: 300px;
+    }
+
+    h2 {
+        font-size: 30px;
+        padding-bottom: 10px;
+        word-break: break-all;
+    }
+
+    .price {
+        padding-top: 10px;
+    }
+
+    .price > p {
+        font-size: 1.5rem
+    }
+
+    #nav-bottom > li, a {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 600px) {
+
+    #home-button {
+        font-size: 60px;
+    }
+
+    #top-menu {
+        max-height: 150px;
+    }
+
+    #links {
+        padding-bottom: 2px;
+    }
+
+    #links {
+        font-size: 1rem;
+    }
+
+    .cta {
+        font-size: 1rem;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    .drink-image {
+        max-width: 200px;
+    }
+
 }
